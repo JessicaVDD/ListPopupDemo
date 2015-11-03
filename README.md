@@ -1,0 +1,1 @@
+Demo project to demonstrate popup, caliburn, mef and listbox
