@@ -21,6 +21,9 @@ namespace ListPopupDemo
 
         public string Translate(string code)
         {
+            if (code == "ListPopupDemo.MenuView.MenuTitle") return "I'm a translated Menu Title";
+            if (code == "ListPopupDemo.MenuView.The last line") return "Bound last line: translated";
+            if (code == "General.LastLine") return "Translated with adjusted context";
             return string.Format("[{0}]", code);
         }
     }

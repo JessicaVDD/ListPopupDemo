@@ -8,6 +8,11 @@
              d:DesignHeight="300" d:DesignWidth="300"
              BorderBrush="Black" BorderThickness="1">
     <Grid Background="LightGray">
+        <StackPanel>
+            <TextBlock Text="{local:Loc Code=MenuTitle}" Margin="5"/>
             <TextBlock Name="Text" Margin="5"/>
+            <TextBlock Text="{local:BindableLoc Binding={Binding LastLine}}" Margin="5"/>
+            <TextBlock Text="{local:Loc LastLine, Context=General}" Margin="5"/>
+        </StackPanel>
     </Grid>
 </UserControl>
